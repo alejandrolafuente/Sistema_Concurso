@@ -13,20 +13,20 @@ Segue a contextualização do problema:
 A empresa FazTudo Ltda. irá realizar um concurso para preenchimento de vagas
 em 12 cargos, conforme tabela abaixo:
 
-COD                 DESCRIÇÃO DO CARGO                 VAGAS
+COD                 DESCRIÇÃO DO CARGO                 (VAGAS)
 
-1                   ENGANADOR DE CHEFE                  20
-2                   ENROLADOR DE TRABALHO               15
-3                   PENSADOR                            17
-4                   ANALISTA DE SISTEMAS                18
-5                   DEGUSTADOR DE CERVEJA               15
-6                   TECNICO EM REDES                    20
-7                   CONTADOR DE ESTORIAS                14
-8                   PEDREIRO DE PRIMEIRA                12
-9                   AÇOUGUEIRO LIMPINHO                 17
-10                  SEGURANÇA DE BANHEIRO               18
-11                  GESTOR DE BORBOLETAS                17
-12                  AGENTE LEVA E TRAZ                  20
+1                   ENGANADOR DE CHEFE                  (20)
+2                   ENROLADOR DE TRABALHO               (15)
+3                   PENSADOR                            (17)
+4                   ANALISTA DE SISTEMAS                (18)
+5                   DEGUSTADOR DE CERVEJA               (15)
+6                   TECNICO EM REDES                    (20)
+7                   CONTADOR DE ESTORIAS                (14)
+8                   PEDREIRO DE PRIMEIRA                (12)
+9                   AÇOUGUEIRO LIMPINHO                 (17)
+10                  SEGURANÇA DE BANHEIRO               (18)
+11                  GESTOR DE BORBOLETAS                (17)
+12                  AGENTE LEVA E TRAZ                  (20)
 
 O concurso será realizado em uma única etapa, com prova de múltipla escolha com
 90 questões assim distribuidas:
