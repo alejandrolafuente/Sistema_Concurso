@@ -31,12 +31,12 @@ COD                 DESCRIÇÃO DO CARGO                 (VAGAS)
 O concurso será realizado em uma única etapa, com prova de múltipla escolha com
 90 questões assim distribuidas:
 
-10 questões de L.E.M (1)                -----    Max 100 pontos (10 por acerto)
-10 questões de matematica (2)           -----    Max 100 pontos (10 por acerto)
-20 questões de lógica (3)                -----   Max 100 pontos (5 por acerto)
-20 questões de conhe. espec. do cargo (4)  ----- Max 100 pontos (5 por acerto)
-20 questões de informática (5)           -----   Max 100 pontos (5 por acerto)
-10 questões de atualidades (6)          -----    Max 100 pontos (10 por acerto)
+10 questões de L.E.M (1)                -----    Max 100 pontos (10 por acerto);
+10 questões de matematica (2)           -----    Max 100 pontos (10 por acerto);
+20 questões de lógica (3)                -----   Max 100 pontos (5 por acerto);
+20 questões de conhe. espec. do cargo (4)  ----- Max 100 pontos (5 por acerto);
+20 questões de informática (5)           -----   Max 100 pontos (5 por acerto);
+10 questões de atualidades (6)          -----    Max 100 pontos (10 por acerto);
 
 As vagas nos cargos serão preenchidas pela ordem decrescente da SOMA das notas
 das 6 disciplinas, sendo critério de desempate pela ordem:
