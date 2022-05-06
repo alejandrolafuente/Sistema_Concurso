@@ -2,7 +2,7 @@ Program seq1 ;
 {criar arq de acesso seq com os campos abaixo: numero(4 - menor que 3001),
 nome(35), cpf(11), nas(8-dd,mm,aaaa), cargo (2-maior que zero e menor que 13)
  numero menor que 1 encerra o processamento}
-uses ex2modbiblio;
+uses bibliont;
 var num,aa:string[4]; //  8
     nome:string[35];  // 35
     cpf:string[11];   // 11
@@ -25,29 +25,33 @@ BEGIN
   assign(arql,'cadastro.txt'); //liga nome logico ao físico
   append(arql);                //abre para acrescentar informações (apenas seq, texto)
   writeln; // ** acrescentei para pular linha e poder gravar o próximo registro
+  
   Repeat
-   write('num=>');
+   write('num=>');   // primeiro usuario entre com seu  numero de inscrição
    readln(num); 
    val(num,numi,err);
    if(err>0) or (numi >3000) then
     writeln('ilegal');
   Until(err=0) and (numi<=3000);
   
-  WHILE(numi>0) DO
-   BEGIN
+  WHILE(numi>0) DO  // encerra  quando entrar  com zero ou negativo
+  BEGIN
 //preenche com zeros a esquerda os campos numéricos
-    t:=length(num);
+    t:=length(num);   
     for a:=1 to 4-t do      
-     insert('0',num,1);// insere zeros à esquerda de num caso precise               
+     insert('0',num,1);// insere zeros à esquerda de num caso precise  
+		              
     insert(num,reg,1); //insere numero em reg na posição 1
-    write('nome=>');
+    
+    write('nome=>');   
     readln(nome);
     nome:= upcase(nome);
 //garantir que o nome tenha 35 caracteres inserindo espaços à direita se necessário
-   t:=length(nome);
-   for a:=t+1 to 35 do
-    insert(' ',nome,a);
-   insert(nome,reg,5); //insere nome em reg
+    t:=length(nome);
+    for a:=t+1 to 35 do
+     insert(' ',nome,a);
+     
+    insert(nome,reg,5); //insere nome em reg
 //tem que validar CPF(não está)
     write('cpf=>');
     readln(cpf);
@@ -55,22 +59,26 @@ BEGIN
 //TEM QUE VALIDAR A DATA 
     REPEAT
      aux:=true;
+     
 		 WRITE('DIA=>');
-     READLN(DD);
-     val(dd,di,err);  // garante que so entram digitos numéricos di eh dia em inteiro
+     READLN(DD);                   
+     val(dd,di,err);  // garante que so entram digitos numéricos, di eh dia em inteiro
      if(err > 0) then
 		  aux:=false;
+		  
      WRITE('MES=>');
      READLN(MM);
      val(mm,mi,err);  // mi eh mes em integer
      if(err > 0) then
 		  aux:=false;
+		  
      WRITE('ANO=>');
      READLN(AA);
      val(aa,ai,err); // ai eh ano em integer
      if(err > 0) then
 		  aux:=false;
-     if(aux) then   // se aux true so entraram dados numéricos até agora, top!
+		  
+     if(aux) then   // se aux=true so entraram dados numéricos até agora, top!
 		  aux:=validata(di,mi,ai);
 		 if(not aux) then
 		  writeln('ilegal')
