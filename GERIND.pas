@@ -14,6 +14,7 @@ VAR ARQS:TEXT;
     A,B,E,NUM:INTEGER;
 //***************************************************************************************    
 BEGIN
+	writeln(A,B,E,NUM);
   ASSIGN(ARQS,'CAND.TXT');
   RESET(ARQS); // abre para leitura posicionando o ponteiro no início do arquivo
   ASSIGN(ARQD,'CAND.IND');
