@@ -1,4 +1,4 @@
-Program N09RICARDO_ALEJANDRO;
+Program N09_ALEJANDRO;
 uses bibliont;
 var
  arq:file of regis;
@@ -17,7 +17,7 @@ BEGIN
  Repeat
   read(arq,reg);
   i:=a+1;          
-	vet[i].pf:=a;    //a=posicao fisica do registro no arquivo começando em zero!
+	vet[i].pf:=a;    //a=posicao fisica do registro no arquivo comeï¿½ando em zero!
 	str(reg.num,num);
 	tc:=length(num);
 	for b:=1 to 4-tc do
@@ -26,10 +26,10 @@ BEGIN
 	a:=a+1;
  Until(eof(arq));	
 //fim da montagem
- tot:=i;    // tot = 1227 que é o tamanho do nosso vetor vet, incluindo os "faltantes"
+ tot:=i;    // tot = 1227 que ï¿½ o tamanho do nosso vetor vet, incluindo os "faltantes"
  writeln('inicio da ordenacao');
  ordem(vet,i);
- writeln('fim da ordenação');
+ writeln('fim da ordenaï¿½ï¿½o');
 //leitura das notas, acessa apenas os registros dos que fizeram a prova
  REPEAT
   t:=t+1;   // t conta o total de registros acessados ou alunos que fizeram a prova
@@ -49,7 +49,7 @@ BEGIN
    ini:= ini + 4;
   End;
   reg.som:= som;
-	seek(arq,vet[posiv].pf); // reposiciona para gravar e não gravar no próximo registro
+	seek(arq,vet[posiv].pf); // reposiciona para gravar e nï¿½o gravar no prï¿½ximo registro
 	write(arq,reg);
  UNTIL eof(nota);
  close(arq);
@@ -57,13 +57,13 @@ BEGIN
  clrscr;
  writeln;
  writeln;
- writeln('        DISCIPLINA                        MÉDIA');
+ writeln('        DISCIPLINA                        Mï¿½DIA');
  writeln;
- writeln('        LÍNGUA ESTRANGEIRA MODERNA','        ',soma[1]/t:5:2);
- writeln('        MATEMÁTICA','                        ',soma[2]/t:5:2);
- writeln('        LÓGICA','                            ',soma[3]/t:5:2);
- writeln('        CONHECIMENTOS ESPECÍFICOS','         ',soma[4]/t:5:2);
- writeln('        INFORMÁTICA','                       ',soma[5]/t:5:2);
+ writeln('        Lï¿½NGUA ESTRANGEIRA MODERNA','        ',soma[1]/t:5:2);
+ writeln('        MATEMï¿½TICA','                        ',soma[2]/t:5:2);
+ writeln('        Lï¿½GICA','                            ',soma[3]/t:5:2);
+ writeln('        CONHECIMENTOS ESPECï¿½FICOS','         ',soma[4]/t:5:2);
+ writeln('        INFORMï¿½TICA','                       ',soma[5]/t:5:2);
  writeln('        ATUALIDADES','                       ',soma[6]/t:5:2);
  writeln;
  termine; 

@@ -1,4 +1,4 @@
-Program N10_1RICARDO_ALEJANDRO;
+Program N10_ALEJANDRO;
 uses bibliont;
 const vagas : array[1..12] of integer = (20,15,17,18,15,20,14,12,17,18,17,20);
 const data_fut = 20200101;
@@ -40,10 +40,10 @@ BEGIN
 	 writeln(vet[a].pf:5,' ',vet[a].cc);
 	writeln('ordenando, aguarde...');
   ordem(vet,tot);
-  writeln('fim da ordenação');
+  writeln('fim da ordenaï¿½ï¿½o');
   For a:= tot downto (tot-20) do
 	 writeln(vet[a].pf:5,' ',vet[a].cc);
-// acesso indexado e atualização de registro:
+// acesso indexado e atualizaï¿½ï¿½o de registro:
   For a:= tot downto 1 do
   Begin
    seek(arq,vet[a].pf);

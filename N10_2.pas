@@ -1,4 +1,4 @@
-Program N10_2RICARDO_ALEJANDRO;
+Program N10_ALEJANDRO;
 uses bibliont;
 const cargos: array[1..12] of string[22] =
 ('ENGANADOR DE CHEFE    ','ENROLADOR DE TRABALHO ','PENSADOR              ','ANALISTA DE SISTEMAS  ',
@@ -11,10 +11,10 @@ var reg: regis; arq: file of regis ; stri: string[2]; cad: string[4];
 BEGIN
  assign(arq,'cand.ind');
  reset(arq);
- writeln('Entre com a opção:');
- writeln('1- Para mostrar os classificados em ordem alfabética');
- writeln('2- Para mostrar TODOS os candidatos em ordem de classificação por cargo');
- writeln('3- Para mostrar TODOS os candidatos em ordem de classificação geral');
+ writeln('Entre com a opï¿½ï¿½o:');
+ writeln('1- Para mostrar os classificados em ordem alfabï¿½tica');
+ writeln('2- Para mostrar TODOS os candidatos em ordem de classificaï¿½ï¿½o por cargo');
+ writeln('3- Para mostrar TODOS os candidatos em ordem de classificaï¿½ï¿½o geral');
  Repeat
   leia1('Ordem',opc);
  Until(opc>0) and (opc<=3);
@@ -63,7 +63,7 @@ BEGIN
   writeln(vet[c].pf:5,' ',vet[c].cc);
  writeln('Ordenando, aguarde...');
  ordem(vet,i);
- writeln('Fim da ordenação');
+ writeln('Fim da ordenaï¿½ï¿½o');
  For c:= 1 to i do
   writeln(vet[c].pf:5,' ',vet[c].cc);
  writeln('================= PRESSIONE ENTER PARA CONTINUAR ================');
@@ -89,9 +89,9 @@ BEGIN
    If (opc = 2) or (opc = 3) then
    Begin
     If (opc = 3) then
-     writeln('  RELAÇÃO ORDEM DE CLASSIFICAÇÃO GERAL');
+     writeln('  RELAï¿½ï¿½O ORDEM DE CLASSIFICAï¿½ï¿½O GERAL');
     write('  ORD INSC NOME                                SOM N4 N5 N3 N2 N6 N1');
-    WRITELN(' NASCIMENTO  CAR OBSERVAÇÃO');
+    WRITELN(' NASCIMENTO  CAR OBSERVAï¿½ï¿½O');
    End;
   End;
   orde:= orde + 1;

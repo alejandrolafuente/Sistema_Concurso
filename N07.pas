@@ -1,7 +1,7 @@
-Program N07_RICARDO_ALEJANDRO;
+Program N07_ALEJANDRO;
 uses crt;
 type vetor = array[1..6] of integer;   
-var arq1,arq2: text; // arq1 é PROVAOK.txt e arq2 é notas.txt
+var arq1,arq2: text; // arq1 ï¿½ PROVAOK.txt e arq2 ï¿½ notas.txt
     reg1:string[94]; reg2: string[28]; gaba: string[90]; nn: string[4];
     a,x,i,aux,posi,ce: integer;  notas, questoes: vetor;
     

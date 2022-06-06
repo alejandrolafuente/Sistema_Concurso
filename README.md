@@ -1,12 +1,11 @@
 Sistema básico de correção e gerenciamento de concurso implementado na
-linguagem PASCAL
+linguagem PASCAL. Este projeto tem a intenção de demonstrar o domínio de conceitos
+básicos de programação, como lógica, estruturas de repetição, uso de condicionais,
+domínio no uso de estruturas de dados relativamente complexas, e manipulação de arquivos.
 
 Este sistema foi implementado utilizando o compilador Pascalzim, fácil-
 mente encontrado nos buscadores. Basta baixar para rodar o programa, o
 compilador é muito leve.
-
-O objetivo é mostrar como se utilizam registros e a manipulação de ar-
-quivos nesta linguagem.
 
 Segue a contextualização do problema:
 
